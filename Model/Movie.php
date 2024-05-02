@@ -3,19 +3,21 @@ class Movie {
 
   public $titolo;
   public $sottotitolo;
-  public $genere;
+  public $anno;
 
 
-  function __construct(string $_titolo, string $_sottotitolo, string $_genere ){
+  function __construct(string $_titolo, string $_sottotitolo, string $_anno ){
 
     $this-> titolo = $_titolo;
     $this-> sottotitolo = $_sottotitolo;
-    $this-> genere = $_genere;
+    $this-> anno = $_anno;
   }
 
 
 
-  public function
+  public function getFullInfo() {
+    return "$this->titolo, $this->sottotitolo, $this->anno";
+  }
 }
 
 
