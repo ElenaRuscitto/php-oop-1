@@ -6,8 +6,8 @@ class Movie {
   public $anno;
 
   public $info;
-  public $regia;
-  public $sceneggiatura;
+  // public $regia;
+  // public $sceneggiatura;
 
 
   function __construct(string $_titolo, string $_sottotitolo, int $_anno, Info $_info){
